@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Project 3 - Online Registration Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body> 
+    <header>
+      <div class="title">
+        <h1>The code review</h1>
+      </div>
+      <div class="banner">
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+      </div>
+    </header>
+    <form>
+      <fieldset id="contact-info">
+        <legend>Contact Information</legend>
+        <div class="form-item clearfix">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="user_name" placeholder="Required" required>
+        </div>
+        <div class="form-item clearfix">
+          <label for="mail">Email Address</label>
+          <input type="email" id="mail" name="user_email" placeholder="Required" required>
+        </div> 
+        <div class="form-item clearfix">
+          <label for="tel-number">Phone number</label>
+          <input type="tel" id="tel-number" name="user_tel" required>
+        </div>
+        <div class="form-item clearfix">
+          <label for="address">Street Address</label>
+          <input type="text" id="address" name="user_address" required>
+        </div>
+        <div class="form-item clearfix">
+          <label for="city">City</label>
+          <input type="text" id="city" name="user_city" required>
+        </div>
+        <div class="form-item clearfix">
+          <label for="state">State</label>
+          <select id="state" name="user_state" required>
+            <option value="" disabled selected hidden>Choose State</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="Delaware">Delaware</option>
+            <option value="Florida">Florida</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Hawaii">Hawaii</option>
+          </select>
+        </div>
+        <div class="form-item clearfix">
+          <label for="zip-number">Zip Code</label>
+          <input type="text" id="zip-number" name="user_zip" required>
+        </div>
+      </fieldset>
+      <fieldset id="newsletter">
+        <legend>Newsletter</legend>
+        <div class="nl-1">
+          <label>Select the newsletters you would like to recieve</label>
+          <label class="checkboxContainer" for="html-news">HTML News
+            <input type="checkbox" name="news" id="html-news" value="html-news">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkboxContainer" for="css-news">CSS News
+            <input type="checkbox" name="news" id="css-news" value="css-news">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkboxContainer" for="javascript-news">Javascript News
+            <input type="checkbox" name="news" id="javascript-news" value="javascript-news">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="nl-2">
+          <label>Newsletter format</label>
+          <label class="radioContainer" for="format_html">
+            HTML
+            <input type="radio" name="user_choice" id="format_html" value="format_html">
+            <span class="circle"></span>
+          </label>
+          <label class="radioContainer" for="format_plaintxt">
+            Plain text
+            <input type="radio" name="user_choice" id="format_plaintxt" value="format_plaintxt">
+            <span class="circle"></span>
+          </label>
+        </div>   
+        <div class="nl-3">
+          <label for="text-area">Other topics you'd like to hear about</label>
+          <textarea placeholder="Let us know..." name="user_comment" id="text-area" spellcheck="false"></textarea>
+          <button type="submit">Sign Up</button>
+        </div>
+      </fieldset>
+    </form>
+    <footer>Copyright the code review</footer>
+  </body>
+</html>
